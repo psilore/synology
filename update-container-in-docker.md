@@ -2,7 +2,7 @@
 
 ## Via webbgui
 
-1. Click the Docker app in Synology DSM
+1. Click the `Docker` app in Synology DSM
 
 2. Click the `Registry` tab
 
@@ -21,4 +21,24 @@
 9. Start the new container.
 
 ## Via CLI
+You can access your container id & image name with the `$ sudo docker ps` command
 
+1. `ssh` to your Synology NAS
+
+2. `Pull` down the latest image
+
+   ```sh
+   $ sudo docker pull <IMAGE-NAME:TAG>
+   ```
+
+3. `Stop` your container
+
+   ```sh
+   $ sudo docker stop <CONTAINER-ID>
+   ```
+
+4. `Run` your container
+
+   ```sh
+   $ sudo docker run <CONTAINER-ID>
+   ```
