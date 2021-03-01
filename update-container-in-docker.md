@@ -37,7 +37,13 @@ You can access your container id & image name with the `$ sudo docker ps` comman
    $ sudo docker stop <CONTAINER-ID>
    ```
 
-4. `Run` your container
+4. `Clear` your container
+
+   ```sh
+   $ sudo docker container rm <CONTAINER-ID>
+   ```
+
+5. `Run` your container
 
    ```sh
    $ sudo docker run <CONTAINER-ID>
